@@ -6,7 +6,7 @@ export const About = () => {
   const a = useContext(noteContext);
   useEffect(() => {
     a.update()
-  
+  // eslint-disable-next-line
   }, [])
   
   return (
