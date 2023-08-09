@@ -4,20 +4,94 @@ import NoteContext from "./noteContext";
 
 const NoteState = (props)=>{
 
-    const s1 = {
-           "name" : "Sukhdeep",
-           "class": "5b" 
+   const notesInitial = [
+    {
+        
+        "_id":" 64cb036ee17c65c2e9a1fda6",
+        "user":"64c9b9f86b48c1f0a207c220",
+        "title":"My title",
+        "description":"Please wake up early",
+        "tag":"personal",
+        "date":"2023-08-03T01:31:26.230+00:00",
+        "__v":0
+    }, {
+        
+        "_id":" 64cb036ee17c65c2e9a1fda6",
+        "user":"64c9b9f86b48c1f0a207c220",
+        "title":"My title",
+        "description":"Please wake up early",
+        "tag":"personal",
+        "date":"2023-08-03T01:31:26.230+00:00",
+        "__v":0
+    }, {
+        
+        "_id":" 64cb036ee17c65c2e9a1fda6",
+        "user":"64c9b9f86b48c1f0a207c220",
+        "title":"My title",
+        "description":"Please wake up early",
+        "tag":"personal",
+        "date":"2023-08-03T01:31:26.230+00:00",
+        "__v":0
+    }, {
+        
+        "_id":" 64cb036ee17c65c2e9a1fda6",
+        "user":"64c9b9f86b48c1f0a207c220",
+        "title":"My title",
+        "description":"Please wake up early",
+        "tag":"personal",
+        "date":"2023-08-03T01:31:26.230+00:00",
+        "__v":0
+    }, {
+        
+        "_id":" 64cb036ee17c65c2e9a1fda6",
+        "user":"64c9b9f86b48c1f0a207c220",
+        "title":"My title",
+        "description":"Please wake up early",
+        "tag":"personal",
+        "date":"2023-08-03T01:31:26.230+00:00",
+        "__v":0
+    }, {
+        
+        "_id":" 64cb036ee17c65c2e9a1fda6",
+        "user":"64c9b9f86b48c1f0a207c220",
+        "title":"My title",
+        "description":"Please wake up early",
+        "tag":"personal",
+        "date":"2023-08-03T01:31:26.230+00:00",
+        "__v":0
+    }, {
+        
+        "_id":" 64cb036ee17c65c2e9a1fda6",
+        "user":"64c9b9f86b48c1f0a207c220",
+        "title":"My title",
+        "description":"Please wake up early",
+        "tag":"personal",
+        "date":"2023-08-03T01:31:26.230+00:00",
+        "__v":0
+    }, {
+        
+        "_id":" 64cb036ee17c65c2e9a1fda6",
+        "user":"64c9b9f86b48c1f0a207c220",
+        "title":"My title",
+        "description":"Please wake up early",
+        "tag":"personal",
+        "date":"2023-08-03T01:31:26.230+00:00",
+        "__v":0
+    }, {
+        
+        "_id":" 64cb036ee17c65c2e9a1fda6",
+        "user":"64c9b9f86b48c1f0a207c220",
+        "title":"My title",
+        "description":"Please wake up early",
+        "tag":"personal",
+        "date":"2023-08-03T01:31:26.230+00:00",
+        "__v":0
     }
-    const [state, setState] = useState(s1)
-    const update = ()=>{
-        setTimeout(() => {
-            setState({"name" : "Sukhdeep Sharma",
-             "class": "5b"})
-        }, 1000);
-    }
+   ]
+   const [notes, setNotes] = useState(notesInitial)
     return (
      
-        <NoteContext.Provider value={{state:state, update:update}}>
+        <NoteContext.Provider value={{notes, setNotes}}>
            { props.children}
         </NoteContext.Provider>
     )
