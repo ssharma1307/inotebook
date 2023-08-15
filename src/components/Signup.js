@@ -36,7 +36,9 @@ else{
     setCredentials({...credentials, [e.target.name]:e.target.value})
 }
   return (
-    <div className='container'>
+    <div className='container mt-2'>
+      
+      <h2 className="my-3">Create an account to use to iNotebook</h2>
       <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <label htmlfor="name" className="form-label">Name</label>
@@ -54,7 +56,7 @@ else{
           </div>
           <div className="mb-3">
             <label htmlfor="cpassword" className="form-label">Confirm Password</label>
-            <input type="cpassword" className="form-control" id="cpassword" name="cpassword" onChange={onChange} required minLength={5}/>
+            <input type="password" className="form-control" id="cpassword" name="cpassword" onChange={onChange} required minLength={5}/>
           </div>
           <button type="submit" className="btn btn-primary">Submit</button>
       </form>
